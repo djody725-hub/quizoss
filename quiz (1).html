@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis OSS-RBA</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 20px; }
+    .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #2c3e50; }
+    .question { margin-bottom: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px; }
+    button { background: #3498db; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #2980b9; }
+    #result { text-align: center; font-weight: bold; font-size: 18px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kuis OSS-RBA</h2>
+    <p>Masukkan Nama: <input type="text" id="nama" required></p>
+    <form id="quizForm">
+<div class="question"><p>1. Apa kepanjangan dari OSS-RBA?</p><input type="radio" name="q1" value="A"> A. Online Submission System – Risk Based Analysis<br><input type="radio" name="q1" value="B"> B. Online Single Submission – Risk Based Approach<br><input type="radio" name="q1" value="C"> C. Online Service System – Risk Based Assessment<br><input type="radio" name="q1" value="D"> D. Online Single Submission – Risk Business Application<br></div><div class="question"><p>2. Undang-undang yang menjadi dasar OSS-RBA adalah …</p><input type="radio" name="q2" value="A"> A. UU No. 6 Tahun 2023<br><input type="radio" name="q2" value="B"> B. UU No. 25 Tahun 2007<br><input type="radio" name="q2" value="C"> C. UU No. 11 Tahun 2020<br><input type="radio" name="q2" value="D"> D. UU No. 32 Tahun 2009<br></div><div class="question"><p>3. Nomor Induk Berusaha (NIB) diterbitkan melalui sistem …</p><input type="radio" name="q3" value="A"> A. DJP<br><input type="radio" name="q3" value="B"> B. OSS-RBA<br><input type="radio" name="q3" value="C"> C. AHU Online<br><input type="radio" name="q3" value="D"> D. SIMBG<br></div><div class="question"><p>4. Dalam klasifikasi tingkat risiko, jika usaha termasuk risiko rendah, pelaku usaha cukup memiliki …</p><input type="radio" name="q4" value="A"> A. NIB + Izin<br><input type="radio" name="q4" value="B"> B. NIB + SS terverifikasi<br><input type="radio" name="q4" value="C"> C. NIB<br><input type="radio" name="q4" value="D"> D. NIB + SPPL<br></div><div class="question"><p>5. Yang termasuk izin usaha sebelum adanya UU Cipta Kerja adalah …</p><input type="radio" name="q5" value="A"> A. NIB<br><input type="radio" name="q5" value="B"> B. SPPL<br><input type="radio" name="q5" value="C"> C. SIUP dan TDP<br><input type="radio" name="q5" value="D"> D. KBLI<br></div><div class="question"><p>6. Apa fungsi dari Smart Engine dalam OSS-RBA?</p><input type="radio" name="q6" value="A"> A. Menerbitkan NIB secara otomatis<br><input type="radio" name="q6" value="B"> B. Menentukan tingkat risiko dan skala usaha<br><input type="radio" name="q6" value="C"> C. Mengatur jadwal pengawasan<br><input type="radio" name="q6" value="D"> D. Mengelola sanksi administrasi<br></div><div class="question"><p>7. Jika usaha tergolong risiko tinggi, maka perizinan yang wajib dimiliki adalah …</p><input type="radio" name="q7" value="A"> A. NIB saja<br><input type="radio" name="q7" value="B"> B. NIB + SS otomatis<br><input type="radio" name="q7" value="C"> C. NIB + Izin yang terverifikasi<br><input type="radio" name="q7" value="D"> D. NIB + SPPL<br></div><div class="question"><p>8. Persyaratan registrasi akun OSS antara lain adalah …</p><input type="radio" name="q8" value="A"> A. E-KTP, NPWP, Nomor HP dan email aktif<br><input type="radio" name="q8" value="B"> B. Paspor, KTP, Kartu Keluarga<br><input type="radio" name="q8" value="C"> C. Ijazah, Akta Kelahiran, NPWP<br><input type="radio" name="q8" value="D"> D. SKCK, KTP, Kartu Keluarga<br></div><div class="question"><p>9. KBLI dalam OSS-RBA digunakan untuk …</p><input type="radio" name="q9" value="A"> A. Menentukan alamat usaha<br><input type="radio" name="q9" value="B"> B. Menentukan klasifikasi dan uraian aktivitas usaha<br><input type="radio" name="q9" value="C"> C. Menentukan jenis izin yang akan diperoleh<br><input type="radio" name="q9" value="D"> D. Menentukan peraturan daerah yang berlaku<br></div><div class="question"><p>10. Apa keluaran (output) yang diperoleh usaha dengan risiko menengah rendah?</p><input type="radio" name="q10" value="A"> A. NIB<br><input type="radio" name="q10" value="B"> B. NIB + SPPL<br><input type="radio" name="q10" value="C"> C. NIB + SS<br><input type="radio" name="q10" value="D"> D. NIB + Izin terverifikasi<br></div><div class="question"><p>11. Fungsi subsistem pengawasan dalam OSS-RBA adalah …</p><input type="radio" name="q11" value="A"> A. Registrasi akun pelaku usaha<br><input type="radio" name="q11" value="B"> B. Penerbitan NIB<br><input type="radio" name="q11" value="C"> C. Melakukan pengawasan rutin dan insidental<br><input type="radio" name="q11" value="D"> D. Memverifikasi data NIK dan NPWP<br></div><div class="question"><p>12. Salah satu parameter penilaian risiko usaha adalah …</p><input type="radio" name="q12" value="A"> A. Jenis kelamin pemilik usaha<br><input type="radio" name="q12" value="B"> B. Luas lahan dan jumlah tenaga kerja<br><input type="radio" name="q12" value="C"> C. Nomor rekening bank<br><input type="radio" name="q12" value="D"> D. Nama notaris yang membuat akta<br></div><div class="question"><p>13. Peraturan BKPM No. 3 Tahun 2021 mengatur tentang …</p><input type="radio" name="q13" value="A"> A. Tata cara pengawasan<br><input type="radio" name="q13" value="B"> B. Sistem Perizinan Berusaha Berbasis Risiko Terintegrasi Elektronik<br><input type="radio" name="q13" value="C"> C. Tata cara pendirian PT<br><input type="radio" name="q13" value="D"> D. Fasilitas penanaman modal<br></div><div class="question"><p>14. Dalam OSS-RBA, istilah SPPL merujuk pada …</p><input type="radio" name="q14" value="A"> A. Surat Pernyataan Pengelolaan Lingkungan<br><input type="radio" name="q14" value="B"> B. Surat Penetapan Pajak Lokal<br><input type="radio" name="q14" value="C"> C. Surat Persetujuan Penanaman Modal<br><input type="radio" name="q14" value="D"> D. Surat Penentuan Lokasi<br></div><div class="question"><p>15. Subsistem informasi OSS menyediakan layanan berupa …</p><input type="radio" name="q15" value="A"> A. Validasi NPWP<br><input type="radio" name="q15" value="B"> B. Panduan, FAQ, dan informasi tata ruang<br><input type="radio" name="q15" value="C"> C. Penerbitan SPPL<br><input type="radio" name="q15" value="D"> D. Penetapan KBLI<br></div><div class="question"><p>16. Peraturan Pemerintah No. 28 Tahun 2025 mengatur tentang …</p><input type="radio" name="q16" value="A"> A. Penyelenggaraan Perizinan Berusaha Berbasis Risiko<br><input type="radio" name="q16" value="B"> B. Penataan Ruang<br><input type="radio" name="q16" value="C"> C. Perlindungan dan Pengelolaan Lingkungan Hidup<br><input type="radio" name="q16" value="D"> D. Pendirian Perseroan Terbatas<br></div><div class="question"><p>17. Pelaku usaha yang tidak memiliki badan usaha dapat mendaftar OSS dengan status …</p><input type="radio" name="q17" value="A"> A. Non-UMK<br><input type="radio" name="q17" value="B"> B. Orang Perseorangan<br><input type="radio" name="q17" value="C"> C. Persekutuan Firma<br><input type="radio" name="q17" value="D"> D. Badan Usaha Tetap<br></div><div class="question"><p>18. Apa dokumen tambahan yang wajib dimiliki badan usaha saat pendaftaran di OSS?</p><input type="radio" name="q18" value="A"> A. Akta Pengesahan Kemenkumham<br><input type="radio" name="q18" value="B"> B. Surat Keterangan Domisili<br><input type="radio" name="q18" value="C"> C. Sertifikat Tanah<br><input type="radio" name="q18" value="D"> D. Surat Izin Operasional<br></div><div class="question"><p>19. Pada saat proses pengisian data usaha, sistem OSS akan menentukan …</p><input type="radio" name="q19" value="A"> A. Kode pos dan alamat resmi<br><input type="radio" name="q19" value="B"> B. Skala usaha dan tingkat risiko<br><input type="radio" name="q19" value="C"> C. Pemilik modal dan pemegang saham<br><input type="radio" name="q19" value="D"> D. Masa berlaku NIB<br></div><div class="question"><p>20. NIB yang telah terbit dapat …</p><input type="radio" name="q20" value="A"> A. Hanya dilihat di sistem<br><input type="radio" name="q20" value="B"> B. Dicetak dan digunakan sebagai legalitas usaha<br><input type="radio" name="q20" value="C"> C. Berlaku hanya untuk satu tahun<br><input type="radio" name="q20" value="D"> D. Digunakan hanya di tingkat provinsi<br></div>
+      <button type="button" onclick="submitQuiz()">Kirim Jawaban</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const answers = {
+      q1: "B", q2: "A", q3: "B", q4: "C", q5: "C",
+      q6: "B", q7: "C", q8: "A", q9: "B", q10: "C",
+      q11: "C", q12: "B", q13: "B", q14: "A", q15: "B",
+      q16: "A", q17: "B", q18: "A", q19: "B", q20: "B"
+    };
+
+    function submitQuiz() {
+      let score = 0;
+      let jawaban = {};
+      for (let q in answers) {
+        let selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected) {
+          jawaban[q] = selected.value;
+          if (selected.value === answers[q]) score++;
+        } else {
+          jawaban[q] = "-";
+        }
+      }
+
+      let nama = document.getElementById("nama").value;
+      if (!nama) {
+        alert("Silakan isi nama terlebih dahulu!");
+        return;
+      }
+
+      document.getElementById("result").innerText =
+        `Halo ${nama}, Skor Anda: ${score} dari 20`;
+
+      fetch("YOUR_SCRIPT_URL", {
+        method: "POST",
+        body: JSON.stringify({ nama: nama, skor: score, jawaban: jawaban }),
+        headers: { "Content-Type": "application/json" }
+      })
+      .then(res => res.json())
+      .then(data => console.log("Data terkirim:", data))
+      .catch(err => console.error("Error:", err));
+    }
+  </script>
+</body>
+</html>
